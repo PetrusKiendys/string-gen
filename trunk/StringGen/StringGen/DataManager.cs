@@ -20,8 +20,9 @@ namespace StringGen
 			return res;
 		}
 
-		internal void SaveFile(string path, string content)
+		internal void SaveFile(string filename, string content)
 		{
+			string path = "../../out/" + filename;
 			FileStream file = new FileStream(path, FileMode.Create, FileAccess.Write);
 			StreamWriter writer = new StreamWriter(file);
 

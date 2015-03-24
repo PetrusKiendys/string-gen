@@ -1,0 +1,1 @@
+A simple string generator that builds a string from a given input.
